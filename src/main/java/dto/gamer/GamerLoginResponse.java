@@ -1,5 +1,4 @@
-package dto.gamerResultsStatus;
-
+package dto.gamer;
 
 import dto.gamer.GamerDataDto;
 import lombok.AllArgsConstructor;
@@ -8,13 +7,13 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import service.GamerService;
 
-@Getter
 @Setter
+@Getter
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class GamerEditResponse {
+public class GamerLoginResponse {
     private GamerDataDto gamer;
     private String message;
-    private GamerService.Edit_Status editStatus;
+    private GamerService.Login_Status gamerLoginStatus;
 }

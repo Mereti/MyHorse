@@ -1,4 +1,4 @@
-package dto.GamerStudResultStatus;
+package dto.GamerStud;
 
 import dto.GamerStud.GamerStudDataDto;
 import service.GamerStudService;

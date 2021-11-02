@@ -1,4 +1,5 @@
-package dto.gamer;
+package dto.role;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,6 +10,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class GamerEditDto {
-    private String email;
+public class Role {
+    private Integer id;
+    private String roleName;
 }

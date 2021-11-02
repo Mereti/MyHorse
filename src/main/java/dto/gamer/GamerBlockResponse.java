@@ -1,4 +1,4 @@
-package dto.gamerResultsStatus;
+package dto.gamer;
 
 import dto.gamer.GamerDataDto;
 import lombok.AllArgsConstructor;
@@ -7,13 +7,13 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import service.GamerService;
 
-@Setter
 @Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class GamerLoginResponse {
+public class GamerBlockResponse {
     private GamerDataDto gamer;
     private String message;
-    private GamerService.Login_Status gamerLoginStatus;
+    private GamerService.Block_Status blockStatus;
 }

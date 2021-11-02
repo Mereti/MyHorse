@@ -1,9 +1,8 @@
 package dto.gamer;
+import dto.role.Role;
+import lombok.*;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import java.util.Date;
 
 @Setter
 @Getter
@@ -11,9 +10,15 @@ import lombok.Setter;
 @NoArgsConstructor
 
 public class GamerDataDto {
-    private Integer id;
-    private String nickname;
+    private String id;
+    private Integer points;
+    private Date lastLogin;
+    private Date lastLogout;
+    private Integer spendTime;
+    private Role role;
+    private double loc_x;
+    private double loc_y;
+    private double loc_z;
     private String email;
-    private Integer permission;
-    private float points;
+    private String password;
 }

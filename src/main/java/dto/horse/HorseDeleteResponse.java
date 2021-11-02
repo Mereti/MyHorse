@@ -1,10 +1,10 @@
-package dto.HorseResultsStatus;
+package dto.horse;
 
 import dto.horse.HorseDataDto;
 import service.HorseService;
 
-public class HorseUpdateResponse {
+public class HorseDeleteResponse {
     private HorseDataDto horse;
     private String message;
-    private HorseService.Update_Status updateStatus;
+    private HorseService.Delete_Status deleteStatus;
 }

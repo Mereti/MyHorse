@@ -1,10 +1,10 @@
-package dto.GamerStudResultStatus;
+package dto.GamerStud;
 
 import dto.GamerStud.GamerStudDataDto;
 import service.GamerStudService;
 
-public class GamerStudAddResult {
+public class GamerStudDeleteResponse {
     private GamerStudDataDto gamerStudData;
     private String message;
-    private GamerStudService.Add_Status addStatus;
+    private GamerStudService.Delete_Status deleteStatus;
 }
