@@ -22,8 +22,8 @@ public class EventResult {
     @Column(name="eventResultId", nullable = false, unique=true)
     private Integer id;
 
-    @OneToOne(mappedBy = "horseId")
-    private Horse horseId;
+    @Column(name="horseId", nullable = false)
+    private Integer horseId;
 
     @Column(name="pointsScored", nullable = false)
     private Integer pointsScored;

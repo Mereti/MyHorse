@@ -20,8 +20,8 @@ public class GamerStud {
     @Column(name="gamerStudId", nullable = false, unique=true)
     private  Integer gamerStudId;
 
-    @OneToOne(mappedBy = "gamerId")
-    private Gamer gamerId;
+    @Column(name="gamerId", nullable = false)
+    private Integer gamerId;
 
     @Column(name="name", nullable = false)
     private String name;

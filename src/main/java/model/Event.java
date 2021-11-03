@@ -35,8 +35,8 @@ public class Event {
     @Column(name="eventId", nullable = false)
     private Integer spendTime;
 
-    @OneToOne(mappedBy = "roleId")
-    private Role role;
+    @Column(name="roleId", nullable = false)
+    private Integer roleId;
 
     @Column(name="loc_x", nullable = false)
     private double loc_x;

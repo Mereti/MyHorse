@@ -20,14 +20,14 @@ public class Horse {
     @Column(name="horseId", nullable = false, unique=true)
     private Integer horseId;
 
-    @OneToOne(mappedBy = "gamerStud")
-    private GamerStud gamerStud;
+    @Column(name="gamerStud", nullable = false)
+    private Integer gamerStudId;
 
     @Column(name="name", nullable = false)
     private String name; // imie konia
 
-    @OneToOne(mappedBy = "breedId")
-    private Breed breed; // rasa konia
+    @Column(name="breed", nullable = false)
+    private Integer breed; // rasa konia
 
     @Column(name="fast", nullable = false)
     private double fast; // szybkość konia
