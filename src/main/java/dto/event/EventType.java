@@ -1,5 +1,6 @@
-package dto.GamerStud;
+package dto.event;
 
+import dto.horse.HorseDataDto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,8 +11,9 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class GamerStudDataDto {
-    private  Integer id;
-    private Integer gamerId;
+public class EventType {
+    private Integer id;
     private String name;
+    private String description;
+    private Integer pointsScored;
 }

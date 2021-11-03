@@ -1,17 +1,18 @@
-package dto.GamerStud;
-
+package dto.event;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.util.Date;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class GamerStudDataDto {
-    private  Integer id;
-    private Integer gamerId;
-    private String name;
+public class Event {
+    private Integer id;
+    private EventType eventType;
+    private Date date;
 }
