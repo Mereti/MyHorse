@@ -12,4 +12,5 @@ import lombok.Setter;
 
 public class GamerBlockDto {
     private String email;
+    private String nickname;
 }

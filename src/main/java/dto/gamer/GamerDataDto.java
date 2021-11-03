@@ -11,6 +11,7 @@ import java.util.Date;
 
 public class GamerDataDto {
     private String gamerId;
+    private String nickname;
     private Integer points;
     private Date lastLogin;
     private Date lastLogout;

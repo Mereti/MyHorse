@@ -12,6 +12,7 @@ import lombok.Setter;
 
 public class GamerLoginDto {
     private String email;
+    private String nickname;
     private String password;
 
 }
