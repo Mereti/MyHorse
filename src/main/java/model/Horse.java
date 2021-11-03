@@ -1,7 +1,5 @@
 package model;
 
-import dto.horse.HorseBreed;
-import dto.horse.SexHorse;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -19,35 +17,32 @@ import javax.persistence.*;
 public class Horse {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    @Column(name="id", nullable = false, unique=true)
-    private Integer id;
+    @Column(name="horseId", nullable = false, unique=true)
+    private Integer horseId;
+
+    @OneToOne(mappedBy = "gamerStud")
+    private GamerStud gamerStud;
 
     @Column(name="name", nullable = false)
-    private String name;
+    private String name; // imie konia
 
-    @Column(name="breed", nullable = false)
-    private HorseBreed breed;
-
-    @Column(name="sex_horse", nullable = false)
-    private SexHorse sexHorse;
+    @OneToOne(mappedBy = "breedId")
+    private Breed breed; // rasa konia
 
     @Column(name="fast", nullable = false)
-    private float fast;
-
-    @Column(name="resilience", nullable = false)
-    private float resilience;
-
-    @Column(name="health", nullable = false)
-    private float health;
+    private double fast; // szybkość konia
 
     @Column(name="hungry", nullable = false)
-    private float hungry;
+    private double hungry; // głód konia
 
     @Column(name="thirst", nullable = false)
-    private float thirst;
+    private Integer thirst; // pragnienie konia
 
-    @Column(name="state", nullable = false)
-    private String state;
+    @Column(name="appearance", nullable = false)
+    private double appearance;
+
+    @Column(name="value", nullable = false)
+    private double value;
 
 
 }

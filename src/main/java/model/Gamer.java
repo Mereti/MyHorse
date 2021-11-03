@@ -19,13 +19,13 @@ public class Gamer {
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    @Column(name="id", nullable = false, unique=true)
+    @Column(name="gamerId", nullable = false, unique=true)
     private Integer id;
 
     @Column(name="password", nullable = false)
     private String password;
 
-    @Column(name="email", nullable = false, unique=true)
+    @Column(name="email", nullable = false)
     private String email;
 
     @Column(name="nickname", nullable = false)

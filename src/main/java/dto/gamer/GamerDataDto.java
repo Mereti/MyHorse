@@ -10,7 +10,7 @@ import java.util.Date;
 @NoArgsConstructor
 
 public class GamerDataDto {
-    private String id;
+    private String gamerId;
     private Integer points;
     private Date lastLogin;
     private Date lastLogout;

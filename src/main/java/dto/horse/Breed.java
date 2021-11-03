@@ -10,7 +10,7 @@ import lombok.Setter;
 @NoArgsConstructor
 
 public class Breed {
-    private Integer id;
+    private Integer breedId;
     private HorseBreed horseBreed;
     private double fast;
     private Integer hungry;

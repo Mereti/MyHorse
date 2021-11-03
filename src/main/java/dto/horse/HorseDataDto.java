@@ -13,7 +13,7 @@ import model.GamerStud;
 
 
 public class HorseDataDto {
-    private Integer id;
+    private Integer horseId;
     private GamerStud gamerStud;
     private String name; // imie konia
     private Breed breed; // rasa konia

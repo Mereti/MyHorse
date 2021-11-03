@@ -1,5 +1,6 @@
 package dto.GamerStud;
 
+import dto.gamer.GamerDataDto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,7 +12,7 @@ import lombok.Setter;
 @NoArgsConstructor
 
 public class GamerStudDataDto {
-    private  Integer id;
-    private Integer gamerId;
+    private  Integer gamerStudId;
+    private GamerDataDto gamerId;
     private String name;
 }

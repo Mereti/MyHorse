@@ -12,18 +12,22 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "gamer_stud")
+@Table(name = "eventType")
 
-public class GamerStud {
+public class EventType {
+
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    @Column(name="gamerStudId", nullable = false, unique=true)
-    private  Integer gamerStudId;
-
-    @OneToOne(mappedBy = "gamerId")
-    private Gamer gamerId;
+    @Column(name="eventTypeId", nullable = false, unique=true)
+    private Integer eventTypeId;
 
     @Column(name="name", nullable = false)
     private String name;
+
+    @Column(name="description", nullable = false)
+    private String description;
+
+    @Column(name="pointsScored", nullable = false)
+    private Integer pointsScored;
 
 }
