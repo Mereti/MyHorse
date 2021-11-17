@@ -23,33 +23,9 @@ public class Event {
     @Column(name="eventId", nullable = false, unique=true)
     private String eventId;
 
-    @Column(name="eventId", nullable = false)
-    private Integer points;
+    @Column(name="eventType", nullable = false)
+    private Integer eventType;
 
     @Column(name="eventId", nullable = false)
-    private Date lastLogin;
-
-    @Column(name="eventId", nullable = false)
-    private Date lastLogout;
-
-    @Column(name="eventId", nullable = false)
-    private Integer spendTime;
-
-    @Column(name="roleId", nullable = false)
-    private Integer roleId;
-
-    @Column(name="loc_x", nullable = false)
-    private double loc_x;
-
-    @Column(name="loc_y", nullable = false)
-    private double loc_y;
-
-    @Column(name="loc_z", nullable = false)
-    private double loc_z;
-
-    @Column(name="email", nullable = false)
-    private String email;
-
-    @Column(name="password", nullable = false)
-    private String password;
+    private Date eventDate;
 }

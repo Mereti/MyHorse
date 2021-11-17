@@ -53,4 +53,7 @@ public class Gamer {
 
     @Column(name="password", nullable = false)
     private String password;
+
+    @Column(name="nickname", nullable = false)
+    private String nickname;
 }
